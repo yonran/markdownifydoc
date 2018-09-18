@@ -1,0 +1,19 @@
+Hello world
+
+<div id="diagnostic">Starting…</div>
+<textarea id="out"></textarea>
+<script>
+document.getElementById("diagnostic").innerText = "Calling toMarkdown… Sandbox mode " + google.script.sandbox.mode + "; possible functions: " + Object.keys(google.script.run).join(", ")
+google.script.run.withSuccessHandler(onSuccess)
+    .withFailureHandler(onFailure)
+    .toMarkdown()
+document.getElementById("diagnostic").innerText = "Waiting for toMarkdown…"
+function onSuccess(body) {
+    document.getElementById("out").value = body
+    document.getElementById("diagnostic").innerText = "Success!"
+}
+function onFailure(err, userObj) {
+    document.getElementById("diagnostic").innerText = "failed: " + err
+    //…
+}
+</script>

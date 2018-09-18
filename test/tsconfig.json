@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": "./lib",
+        "rootDir": "./src",
+
+        "types": ["google-apps-script", "node"],
+        "lib": ["es6"],
+        "target": "es2015",
+        "isolatedModules": true,
+        "alwaysStrict": true,
+        "inlineSourceMap": true,
+        "noEmitOnError": false,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "pretty": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "noEmit": false
+    }
+}
+  

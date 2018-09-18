@@ -1,0 +1,3 @@
+# run clasp status to test this ignore file
+**/node_modules/**
+test/**
